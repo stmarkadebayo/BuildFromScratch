@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "build-from-scratch"
+version = "0.1.0"
+description = "AI/ML curriculum: Building models from scratch"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "BuildFromScratch Team", email = "team@buildfromscratch.ai"}]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21.0",
+    "matplotlib>=3.5.0",
+    "jupyter>=1.0.0",
+    "scikit-learn>=1.0.0",
+    "pandas>=1.3.0",
+    "torch>=1.12.0",
+    "transformers>=4.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.10.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+]
+ml = [
+    "faiss-cpu>=1.7.0",
+    "wandb>=0.12.0",
+    "mlflow>=1.25.0",
+]
+serve = [
+    "fastapi>=0.85.0",
+    "uvicorn>=0.18.0",
+    "streamlit>=1.12.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning"]
