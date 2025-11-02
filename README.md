@@ -1,20 +1,25 @@
-# Build From Scratch — AI/ML Curriculum
+# Build From Scrath #ScratchToProd — Detailed AI/ML Curriculum
 
 A comprehensive learning path to master artificial intelligence and machine learning by building everything from scratch. This curriculum covers machine learning fundamentals through advanced AI systems, emphasizing understanding over APIs.
 
 ## Overview
 
-This repository contains a structured AI/ML curriculum divided into 9 phases:
+This repository contains a structured AI/ML curriculum divided into **9 phases** plus **2 interludes**:
 
-1. **Core ML Foundations** - Linear/Logistic Regression, Decision Trees, SVM, Regularization
-2. **Deep Learning Core** - Neural Networks, CNNs, RNNs/LSTMs, Autoencoders, GANs
-3. **Transformers & Modern Architectures** - Attention, BERT, GPT, ViT, Diffusion Models
-4. **Retrieval, Reasoning & Grounded AI** - RAG, Vector Databases, OCR, Multimodal
-5. **Scalable & Efficient Models** - MoE, Quantization, PEFT, Speculative Decoding
-6. **Agents, Reasoning & Self-Improving Systems** - RL, PPO, RLHF, Tool-Using Agents
-7. **AI Systems Engineering & Deployment** - MLOps, Experiment Tracking, Serving
-8. **The 2025 AI Frontier** - Recent innovations and advanced projects
-9. **Responsible AI, Interpretability & Production** - Ethics, Fairness, Interpretability, MLOps
+### Core Phases
+1. **🧩 Phase 1 — Core Machine Learning Foundations** - Linear/Logistic Regression, Decision Trees, KNN/K-Means, Naive Bayes/SVM, PCA, Regularization, Gradient Variants
+2. **🏛️ Phase 2 — Deep Learning Core** - Feedforward NNs, CNNs, RNNs/LSTMs, Autoencoders, GANs, Attention Mechanisms
+3. **🧠 Phase 3 — Transformers & Modern Architectures** - Transformer, BERT mini, GPT mini, ViT, CLIP, Whisper, Diffusion Models
+4. **🧩 Phase 4 — Retrieval, Reasoning & Grounded AI** - RAG, Vector Databases, OCR, Multimodal RAG
+5. **⚙️ Phase 5 — Scalable & Efficient Models** - MoE, LoRA, Quantization, Pruning, Speculative Decoding
+6. **🤖 Phase 6 — Agents, Reasoning & Self-Improving Systems** - RL, PPO, RLHF, Tool-Using Agents
+7. **🧪 Phase 7 — AI Systems Engineering & Deployment** - MLOps, Experiment Tracking, Model Serving
+8. **🧬 Phase 8 — The 2025 AI Frontier** - Advanced innovations and ongoing projects
+9. **🛡️ Phase 9 — Responsible AI, Interpretability & Production** - Ethics, Bias Detection, Interpretability
+
+### Interludes
+- **🏗️ DSA Fundamentals** - Graph Algorithms, Dynamic Programming, String Algorithms, Advanced Trees
+- **🏛️ System Design** - ML Platform Design, Real-time Feature Engineering, Multi-tenant Systems
 
 ## Key Features
 
@@ -23,6 +28,7 @@ This repository contains a structured AI/ML curriculum divided into 9 phases:
 - 🚀 **Production Ready** - Includes deployment, monitoring, and best practices
 - 🏗️ **Scalable Structure** - Monorepo with clean organization per phase
 - 🔧 **Modern Tooling** - GitHub Actions CI/CD, pre-commit hooks, type checking
+- 🌍 **African Context** - Nigerian applications in healthcare, agriculture, education
 
 ## Quick Start
 
@@ -48,22 +54,24 @@ pip install -e ".[serve]"  # For demo deployments
 
 ```
 .
-├── phase1_core_ml/           # ML fundamentals
-├── phase2_deep_learning/     # Neural networks & architectures
-├── phase3_transformers_modern/  # Transformers & modern AI
-├── phase4_retrieval_grounded_ai/  # Retrieval & multimodal
-├── phase5_scalable_efficient/     # Efficient model techniques
-├── phase6_agents_reasoning/  # Agent systems & reasoning
-├── phase7_systems_deployment/ # MLOps & production
-├── phase8_ai_frontier/       # Advanced/ongoing projects
-├── phase9_responsible_ai/    # Ethics & interpretability
-├── docs/                     # Documentation
-├── tests/                    # Unit tests
-├── demos/                    # Deployment demos
-└── src/                      # Shared utilities
+├── interlude_dsa_fundamentals/     # DSA for ML engineers
+├── interlude_system_design/        # ML platform design patterns
+├── phase1_core_ml/                 # ML fundamentals (8 topics)
+├── phase2_deep_learning/           # Neural networks & architectures
+├── phase3_transformers_modern/     # Transformers & modern AI
+├── phase4_retrieval_grounded_ai/   # Retrieval & multimodal
+├── phase5_scalable_efficient/      # Efficient model techniques
+├── phase6_agents_reasoning/        # Agent systems & reasoning
+├── phase7_systems_deployment/      # MLOps & production
+├── phase8_ai_frontier/             # Advanced/ongoing projects
+├── phase9_responsible_ai/          # Ethics & interpretability
+├── docs/                           # Documentation
+├── tests/                          # Unit tests
+├── demos/                          # Deployment demos
+└── src/                            # Shared utilities
 ```
 
-Each phase contains:
+Each phase/interlude contains:
 - `notebooks/` - Jupyter notebooks with implementations
 - `src/` - Python source code
 - `demos/` - Deployed demos (Streamlit/Gradio)
@@ -86,7 +94,7 @@ Each phase contains:
 
 ## Resources
 
-- [Full Syllabus](syllabus.md) - Detailed learning plan
+- [Full Syllabus](syllabus.md) - Detailed learning plan with resources
 - [Progress Tracking](myprogress.md) - Personal progress log
 - [Jay Alammar's Transformer Blog](https://jalammar.github.io/illustrated-transformer/)
 - [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)

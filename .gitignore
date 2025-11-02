@@ -162,3 +162,10 @@ tensorboard_logs/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Project specific ignores
+.qodo
+.github
+docs/
+demos/
+src/
