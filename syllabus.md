@@ -87,6 +87,60 @@
 
 ---
 
+## **Phase 1 Experimental Labs** (Optional Hands-On Projects)
+
+### **1.1 Linear Regression Demolition Derby**
+> Build OLS from scratch → crank learning rate to 1000 → watch loss nan-out
+> **Break it:** Terrible initialization → observe convergence failure
+> **Visualize:** Loss landscapes, gradient flow, parameter trajectories
+
+### **1.2 Overfitting Olympics**
+> Train until 100% train accuracy → plot exploding train/val gap
+> **Break it:** Add infinite features → watch model memorization
+> **Visualize:** Learning curves, generalization error plots
+
+### **1.3 Feature Engineering Bloodbath**
+> Inject pure noise features → watch model decision boundaries fracture
+> **Break it:** Corrupt feature distributions → observe prediction collapse
+> **Visualize:** Feature importance heatmaps, correlation matrices
+
+### **1.4 Bias-Variance Tug-of-War**
+> High variance (bushes) vs high bias (stumps) → plot tradeoff curves
+> **Break it:** Extreme complexity changes → watch under/overfitting
+> **Visualize:** Error decomposition plots, model complexity curves
+
+### **1.5 Logistic Regression Boundary Wars**
+> Binary classification → plot decision boundaries → extend to multiclass
+> **Break it:** Perfectly separable data → watch gradient vanishing
+> **Visualize:** Probability landscapes, boundary evolution
+
+### **1.6 Decision Tree Pruning Battles**
+> Grow trees to perfection → watch overfitting → prune back
+> **Break it:** Noise-only features → observe random splitting
+> **Visualize:** Tree complexity vs accuracy, pruning curves
+
+### **1.7 Ensemble Method Showdown**
+> Bagging vs boosting vs stacking → measure variance reduction
+> **Break it:** Correlated weak learners → watch ensemble failure
+> **Visualize:** Bias-variance decomposition, diversity-accuracy plots
+
+### **1.8 Clustering Validity Crises**
+> K-means vs hierarchical → elbow method failures → silhouette analysis
+> **Break it:** Non-spherical clusters → watch algorithm confusion
+> **Visualize:** Cluster validity metrics, dimensionality curses
+
+### **1.9 Dimensionality Reduction Duels**
+> PCA vs t-SNE vs UMAP → preserve structure vs speed tradeoffs
+> **Break it:** High noise dimensions → watch embedding collapse
+> **Visualize:** Manifold preservation metrics, computational costs
+
+### **1.10 Optimization Algorithm Wars**
+> GD vs momentum vs Adam → convergence speed vs stability battles
+> **Break it:** Pathological loss surfaces → watch optimization failures
+> **Visualize:** Convergence trajectories, hyperparameter sensitivity
+
+---
+
 # 🏗️ INTERLUDE: DSA Fundamentals for ML Engineers
 
 **Goal:** Master data structures & algorithms essential for ML systems and interviews.
@@ -214,6 +268,45 @@
 
 ---
 
+## **Phase 2 Experimental Labs** (Optional Hands-On Projects)
+
+### **2.1 Feedforward Network Autopsy**
+> Build from NumPy → surgically modify activations → watch layer behaviors
+> **Break it:** Remove all non-linearities → observe linear collapse
+> **Visualize:** Activation distributions, gradient flow per layer
+
+### **2.2 Backpropagation Circuit Debugging**
+> Manual gradient computation → compare with autograd → find discrepancies
+> **Break it:** Corrupt chain rule → watch error accumulation
+> **Visualize:** Gradient norm heatmaps, error propagation diagrams
+
+### **2.3 CNN Filter Archaeology**
+> Implement convolution manually → visualize learned filters → modify kernels
+> **Break it:** Random filter initialization → watch feature learning failure
+> **Visualize:** Filter activation maps, receptive field evolution
+
+### **2.4 RNN Memory Bank Heist**
+> Build vanilla RNN → add GRU/LSTM → compare memory retention
+> **Break it:** Extreme sequence lengths → watch gradient vanishing/exploding
+> **Visualize:** Hidden state trajectories, memory capacity curves
+
+### **2.5 Autoencoder Reconstruction Wars**
+> Plain AE vs VAE → latent space battles → generation quality showdown
+> **Break it:** Over-regularize latent space → watch reconstruction failure
+> **Visualize:** Latent traversals, reconstruction error landscapes
+
+### **2.6 GAN Training Rodeo**
+> Generator vs discriminator → mode collapse scenarios → stabilization tricks
+> **Break it:** Unstable training → watch oscillation/divergence
+> **Visualize:** Loss curves, generated sample evolution, discriminator confidence
+
+### **2.7 Attention Mechanism Dissection**
+> Scaled dot-product → multi-head → cross-attention implementations
+> **Break it:** Remove positional info → watch sequence understanding fail
+> **Visualize:** Attention weight matrices, head specialization patterns
+
+---
+
 # 🧠 PHASE 3 — Transformers & Modern Architectures
 
 **Goal:** Build the foundation of modern LLMs and multimodal models.
@@ -273,6 +366,17 @@
 
 ---
 
+## **Phase 3 Experimental Labs** (Optional Hands-On Projects)
+
+### **3.9 Practical LLM Engineering Labs**
+> Build byte-pair encoder + visual token mapping → plot embedding space geometry distortions
+> **Break it:** Feed pathological text (repetitions, unicode) → watch tokenization fail
+> **Visualize:** Token heatmaps, embedding cluster plots, outlier detection
+
+*(Additional labs for positional encodings, attention mechanisms, sampling, KV cache, long-context, MoE, quantization)*
+
+---
+
 # 🧩 PHASE 4 — Retrieval, Reasoning & Grounded AI
 
 **Goal:** Combine memory + retrieval with generation to build grounded systems (RAG, OCR, multimodal).
@@ -318,6 +422,52 @@
 
 * **Implement:** extract image embeddings (CLIP), index with FAISS, combine image retrieval with text retrieval for multimodal QA.
 * **Deliverable:** demo that answers questions about images using image+text context.
+
+---
+
+## **Phase 4 Experimental Labs** (Optional Hands-On Projects)
+
+### **4.1 Retrieval Accuracy Stress Tests**
+> Build retrieval system → corrupt embeddings with noise → measure recall degradation
+> **Break it:** Add adversarial perturbations → watch retrieval failures
+> **Visualize:** Precision-recall curves under corruption, error propagation heatmaps
+> **Optimize:** Robust embedding normalization, outlier detection filters
+
+### **4.2 Multimodal Fusion Breakdown**
+> CLIP-style alignment → swap modalities → observe confusion patterns
+> **Break it:** Misaligned training pairs → measure semantic drift
+> **Visualize:** Embedding space t-SNE plots, cross-modal similarity matrices
+> **Optimize:** Contrastive learning improvements, modality alignment techniques
+
+### **4.3 RAG Hallucination Analysis**
+> Grounded generation → feed contradictory context → track false claims
+> **Break it:** Irrelevant retrieved documents → measure hallucination rates
+> **Visualize:** Confidence vs accuracy plots, context relevance heatmaps
+> **Optimize:** Retrieval quality filtering, confidence thresholding
+
+### **4.4 Hybrid Search Fusion Wars**
+> BM25 + dense combination → tune fusion weights → optimize ranking
+> **Break it:** Poor weight calibration → watch ranking instability
+> **Visualize:** Fusion sensitivity curves, retrieval diversity metrics
+> **Optimize:** Adaptive fusion strategies, query-dependent weighting
+
+### **4.5 Index Scalability Nightmares**
+> Million-scale indexing → memory pressure tests → query performance
+> **Break it:** Overload indexes → measure degradation patterns
+> **Visualize:** Index build time curves, query latency distributions
+> **Optimize:** Hierarchical indexing, approximate nearest neighbors
+
+### **4.6 OCR Pipeline Robustness Tests**
+> CRNN + CTC → feed degraded images → measure recognition failures
+> **Break it:** Blur, rotate, compress images → watch accuracy collapse
+> **Visualize:** CER vs degradation plots, error type distributions
+> **Optimize:** Data augmentation strategies, model ensemble techniques
+
+### **4.7 Vector Database Performance Labs**
+> Index type comparisons (flat/IVF/HNSW) → memory vs speed tradeoffs
+> **Break it:** GPU memory limits → watch out-of-memory failures
+> **Visualize:** Query throughput curves, memory usage histograms
+> **Optimize:** Index compression, batch processing optimizations
 
 ---
 
@@ -375,6 +525,52 @@
 
 ---
 
+## **Phase 5 Experimental Labs** (Optional Hands-On Projects)
+
+### **5.1 MoE Routing Instability Tests**
+> Build MoE layer → vary routing temperature → measure expert load imbalance
+> **Break it:** Extreme temperature settings → watch routing collapse
+> **Visualize:** Expert utilization histograms, load balancing curves
+> **Optimize:** Adaptive temperature scheduling, auxiliary loss tuning
+
+### **5.2 Quantization Precision Degradation**
+> FP32 → INT8 → INT4 quantization → measure accuracy drops per bit reduction
+> **Break it:** Aggressive quantization → watch catastrophic failure
+> **Visualize:** Accuracy vs bit-width plots, error distribution shifts
+> **Optimize:** Mixed precision strategies, quantization-aware training
+
+### **5.3 LoRA Rank Collapse Experiments**
+> Full fine-tuning vs LoRA → vary rank → measure parameter efficiency
+> **Break it:** Too low rank → watch adaptation failure
+> **Visualize:** Rank vs performance curves, parameter saving ratios
+> **Optimize:** Adaptive rank selection, multi-LoRA composition
+
+### **5.4 Pruning Sparsity Threshold Wars**
+> Magnitude pruning → vary thresholds → measure network capacity loss
+> **Break it:** Over-pruning → watch model collapse
+> **Visualize:** Sparsity vs accuracy tradeoffs, weight distribution changes
+> **Optimize:** Structured pruning patterns, gradual pruning schedules
+
+### **5.5 Speculative Decoding Latency Analysis**
+> Standard decoding vs speculative → measure token generation speedup
+> **Break it:** Poor draft model → watch efficiency degradation
+> **Visualize:** Latency per token curves, acceptance rate distributions
+> **Optimize:** Multi-draft strategies, adaptive speculation
+
+### **5.6 Memory-Augmented Context Limits**
+> Standard transformer vs Mamba/RWKV → scale context length → measure memory usage
+> **Break it:** Extreme context lengths → watch quadratic complexity explosion
+> **Visualize:** Memory vs context length plots, attention pattern complexity
+> **Optimize:** Hierarchical memory structures, efficient state management
+
+### **5.7 Hardware-Specific Optimization Battles**
+> CPU vs GPU vs TPU → profile bottlenecks → measure throughput differences
+> **Break it:** Memory-bound operations → watch performance cliffs
+> **Visualize:** Roofline model plots, kernel utilization heatmaps
+> **Optimize:** Memory layout optimizations, kernel fusion techniques
+
+---
+
 # 🤖 PHASE 6 — Agents, Reasoning & Self-Improving Systems
 
 **Goal:** Learn how AI acts and learns autonomously.
@@ -414,6 +610,46 @@
 
 * **Implement:** small population of agents, simple communication protocol, evaluation & retraining loop.
 * **Deliverable:** simulate interactions & automatic retraining based on evaluation metrics.
+
+---
+
+## **Phase 6 Experimental Labs** (Optional Hands-On Projects)
+
+### **6.1 RL Exploration-Exploitation Breakdown**
+> Epsilon-greedy vs UCB → vary exploration rates → measure regret accumulation
+> **Break it:** Fixed epsilon schedules → watch suboptimal policy convergence
+> **Visualize:** Regret curves, state visitation heatmaps, Q-value landscapes
+> **Optimize:** Adaptive exploration schedules, curiosity-driven learning
+
+### **6.2 Policy Gradient Variance Collapse**
+> REINFORCE vs PPO → measure gradient variance → compare training stability
+> **Break it:** High variance environments → watch policy oscillation
+> **Visualize:** Gradient norm distributions, advantage function histograms
+> **Optimize:** Baseline improvements, variance reduction techniques
+
+### **6.3 RLHF Preference Modeling Failures**
+> Bradley-Terry model → feed conflicting preferences → measure ranking instability
+> **Break it:** Adversarial preference pairs → watch model confusion
+> **Visualize:** Preference probability distributions, ranking consistency plots
+> **Optimize:** Robust preference aggregation, outlier detection
+
+### **6.4 Agent Tool Selection Catastrophes**
+> Tool-using agent → present ambiguous queries → measure tool misuse rates
+> **Break it:** Malformed tool responses → watch agent decision cascades
+> **Visualize:** Tool selection confidence plots, error propagation graphs
+> **Optimize:** Tool validation layers, fallback strategies
+
+### **6.5 Memory Retrieval Accuracy Degradation**
+> Vector memory → add irrelevant facts → measure recall contamination
+> **Break it:** Semantic ambiguity → watch false positive retrievals
+> **Visualize:** Retrieval precision curves, memory interference heatmaps
+> **Optimize:** Attention-based retrieval, memory consolidation
+
+### **6.6 Multi-Agent Coordination Breakdown**
+> Communicating agents → introduce message delays → measure coordination failure
+> **Break it:** Asynchronous communication → watch deadlock scenarios
+> **Visualize:** Message flow graphs, coordination success rates
+> **Optimize:** Consensus protocols, fault-tolerant communication
 
 ---
 
@@ -462,6 +698,52 @@
 
 ---
 
+## **Phase 7 Experimental Labs** (Optional Hands-On Projects)
+
+### **7.1 Model Serving Latency Breakdown**
+> FastAPI endpoint → load testing → measure throughput degradation
+> **Break it:** Concurrent requests overload → watch response time explosion
+> **Visualize:** Latency distributions, queue depth plots, error rate curves
+> **Optimize:** Request batching, async processing, connection pooling
+
+### **7.2 Data Pipeline Failure Cascades**
+> ETL pipeline → inject data corruption → measure downstream effects
+> **Break it:** Schema changes → watch transformation failures propagate
+> **Visualize:** Pipeline DAG failure graphs, data quality degradation plots
+> **Optimize:** Schema validation, error recovery mechanisms
+
+### **7.3 Experiment Tracking Data Loss**
+> MLflow logging → simulate storage failures → measure reproducibility loss
+> **Break it:** Partial log corruption → watch experiment irreproducibility
+> **Visualize:** Log completeness heatmaps, artifact recovery rates
+> **Optimize:** Redundant logging, checksum validation
+
+### **7.4 CI/CD Pipeline Flakiness**
+> GitHub Actions → introduce race conditions → measure build failures
+> **Break it:** Dependency conflicts → watch deployment rollbacks
+> **Visualize:** Build success rates, failure mode distributions
+> **Optimize:** Dependency pinning, parallel execution strategies
+
+### **7.5 Model Monitoring Drift Detection**
+> Production model → feed distribution shifts → measure detection delays
+> **Break it:** Gradual concept drift → watch performance degradation
+> **Visualize:** Feature distribution shifts, prediction confidence changes
+> **Optimize:** Adaptive thresholds, automated retraining triggers
+
+### **7.6 Evaluation Framework Calibration**
+> BLEU/ROUGE metrics → test on adversarial examples → measure metric gaming
+> **Break it:** Length-biased outputs → watch inflated scores
+> **Visualize:** Score vs quality scatter plots, metric sensitivity curves
+> **Optimize:** Multi-metric ensembles, human-in-the-loop validation
+
+### **7.7 Hyperparameter Optimization Failures**
+> Optuna sweeps → constrain compute budget → measure optimization quality
+> **Break it:** Noisy objective function → watch convergence to local optima
+> **Visualize:** Optimization trajectories, hyperparameter importance plots
+> **Optimize:** Multi-objective optimization, early stopping criteria
+
+---
+
 # 🧬 PHASE 8 — The 2025 AI Frontier
 
 **Goal:** Build intuition around recent innovations (MoE 2.0, diffusion transformers, NeRF, constitutional AI).
@@ -479,6 +761,52 @@
 * **Agentic LLM Ecosystems** — AutoGPT / BabyAGI minimal reimplementations and safety wrappers.
 
 **Tools / Papers / Alts:** DeepSpeed, Megatron, recent arXiv papers, Hugging Face community models, timm, DGL / PyG for GNNs.
+
+---
+
+## **Phase 8 Experimental Labs** (Optional Hands-On Projects)
+
+### **8.1 MoE 2.0 Architecture Stress Tests**
+> Mixtral-style MoE → vary expert count → measure routing efficiency
+> **Break it:** Sparse expert activation → watch load balancing failures
+> **Visualize:** Expert activation patterns, routing overhead heatmaps
+> **Optimize:** Dynamic expert allocation, hierarchical routing
+
+### **8.2 Diffusion Transformer Sampling Wars**
+> DiT architecture → compare sampling strategies → measure generation quality
+> **Break it:** Poor timestep scheduling → watch sample quality degradation
+> **Visualize:** Sample quality vs sampling steps, denoising trajectory plots
+> **Optimize:** Adaptive sampling schedules, quality-guided generation
+
+### **8.3 World Model Prediction Accuracy**
+> Recurrent world model → predict environment dynamics → measure prediction errors
+> **Break it:** Distribution shifts → watch model hallucination
+> **Visualize:** Prediction error heatmaps, uncertainty quantification plots
+> **Optimize:** Meta-learning adaptation, ensemble prediction
+
+### **8.4 Graph Neural Network Message Passing**
+> GNN architectures → vary message functions → measure node classification accuracy
+> **Break it:** Over-smoothing → watch feature homogenization
+> **Visualize:** Node embedding distributions, message flow graphs
+> **Optimize:** Attention-based aggregation, residual connections
+
+### **8.5 Neural Radiance Field Rendering**
+> NeRF reconstruction → vary viewpoint sampling → measure rendering fidelity
+> **Break it:** Sparse viewpoints → watch geometry reconstruction failure
+> **Visualize:** Rendering error maps, viewpoint coverage plots
+> **Optimize:** Adaptive sampling strategies, multi-resolution rendering
+
+### **8.6 Constitutional AI Alignment**
+> Self-alignment methods → test safety constraints → measure alignment robustness
+> **Break it:** Adversarial prompts → watch safety violation rates
+> **Visualize:** Alignment score distributions, violation pattern analysis
+> **Optimize:** Multi-objective alignment, hierarchical safety layers
+
+### **8.7 Multimodal RAG Integration Tests**
+> Vision-language RAG → combine modalities → measure retrieval accuracy
+> **Break it:** Modality misalignment → watch cross-modal confusion
+> **Visualize:** Joint embedding spaces, retrieval precision matrices
+> **Optimize:** Cross-modal attention, unified representation learning
 
 ---
 
@@ -516,6 +844,52 @@
 * **Papers:** "Machine Learning: A Probabilistic Perspective" (Murphy)
 * **Tools / Links:** TensorFlow Probability ([tensorflow.org/probability](https://www.tensorflow.org/probability)), Edge Impulse for TinyML ([edgeimpulse.com](https://www.edgeimpulse.com/))
 * **Deliverable:** Demonstration of AI on constrained device or with uncertainty quantification
+
+---
+
+## **Phase 9 Experimental Labs** (Optional Hands-On Projects)
+
+### **9.1 Bias Detection Algorithm Breakdown**
+> Fairness metrics → test on synthetic biased datasets → measure detection accuracy
+> **Break it:** Subtle bias patterns → watch detection failures
+> **Visualize:** Bias score distributions, disparate impact curves
+> **Optimize:** Multi-metric fairness assessment, threshold calibration
+
+### **9.2 Interpretability Method Robustness**
+> SHAP/LIME explanations → test on adversarial examples → measure explanation stability
+> **Break it:** Input perturbations → watch explanation inconsistencies
+> **Visualize:** Explanation heatmaps, stability score distributions
+> **Optimize:** Ensemble explanation methods, confidence intervals
+
+### **9.3 Privacy-Preserving Technique Tradeoffs**
+> Differential privacy → vary noise levels → measure utility-privacy tradeoffs
+> **Break it:** High privacy requirements → watch utility degradation
+> **Visualize:** Privacy budgets vs accuracy curves, noise distribution plots
+> **Optimize:** Adaptive privacy mechanisms, utility-preserving techniques
+
+### **9.4 Model Monitoring Drift Sensitivity**
+> Drift detection algorithms → feed gradual distribution shifts → measure detection latency
+> **Break it:** Slow concept drift → watch false negative rates
+> **Visualize:** Drift score time series, detection threshold sensitivity
+> **Optimize:** Multi-modal drift detection, adaptive alerting
+
+### **9.5 Ethical Alignment Constraint Conflicts**
+> Multiple fairness constraints → optimize competing objectives → measure constraint satisfaction
+> **Break it:** Incompatible fairness goals → watch optimization failures
+> **Visualize:** Pareto fronts, constraint violation heatmaps
+> **Optimize:** Multi-objective optimization, constraint relaxation
+
+### **9.6 Uncertainty Quantification Calibration**
+> Probabilistic models → test on out-of-distribution data → measure calibration quality
+> **Break it:** Distribution shifts → watch overconfidence
+> **Visualize:** Calibration curves, uncertainty score distributions
+> **Optimize:** Conformal prediction, selective classification
+
+### **9.7 Responsible AI Deployment Readiness**
+> Full pipeline audit → simulate production scenarios → measure compliance gaps
+> **Break it:** Edge case failures → watch system vulnerability
+> **Visualize:** Risk assessment matrices, compliance score dashboards
+> **Optimize:** Automated auditing, continuous compliance monitoring
 
 ---
 
