@@ -39,6 +39,8 @@
 
 ## Nigerian Context
 - **Healthcare:** Efficient patient record matching using string algorithms
+- **Financial Services:** Fraud detection and transaction analysis with graph algorithms
+- **E-commerce:** Product recommendation and inventory optimization using dynamic programming
 - **Agriculture:** Resource allocation optimization for crop planning
 - **Education:** Student performance prediction with sequence analysis
 
